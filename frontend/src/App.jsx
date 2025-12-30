@@ -10,12 +10,12 @@ function App() {
   const [Error, setError] = useState("")
 
   const getWeather = async (event)=>{
-    const apiURL = import.meta.env.VITE_API_URL
+    
 
   try {
     setError("")
     if(event.key === 'Enter'){
-      const result = await axios.get( `${apiURL}/weather`, {
+      const result = await axios.get( "https://localhost3000/weather", {
       params:{city}
     })
     console.log(result.data)
