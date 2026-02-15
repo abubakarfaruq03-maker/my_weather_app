@@ -3,8 +3,7 @@ import env from "dotenv";
 import axios from "axios"
 import cors from "cors"
 const app = express();
-const port = 3000;
-env.config()
+const port = process.env.PORT || 3000;env.config()
 app.use(cors())
 
 app.get("/weather", async(req, res)=>{
