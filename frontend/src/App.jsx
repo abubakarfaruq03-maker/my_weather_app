@@ -43,10 +43,10 @@ function App() {
   return (
     <div className="relative w-screen h-screen bg-black/40 
                 before:content-[''] before:absolute before:inset-0 
-                before:bg-[url('/images/sunset.jpeg')] before:bg-cover before:bg-center before:bg-no-repeat before:z-[-1]">
+                before:bg-[url('/images/sunset.jpeg')] before:bg-cover before:bg-center before:bg-repeat before:z-[-1]">
       <div className='flex flex-col justify-center items-center gap-10'>
         <div className='flex flex-col justify-centre items-centre gap-2 '>
-          <div className='flex justify-center items-center mt-10'>
+          <div className='flex justify-center items-center lg:mt-10 mt-20'>
             <input className='p-3 text-[16px] text-white border border-[rgba(255,255,255,0.8)] rounded-[16px]'
               type="text" placeholder='Enter Location'
               onChange={handleInputChange}
