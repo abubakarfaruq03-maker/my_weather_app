@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;env.config()
 app.use(cors())
 
-app.get("/weather", async(req, res)=>{
+app.get("/api/weather", async(req, res)=>{
     try {
         const city= req.query.city
         if(!city){
