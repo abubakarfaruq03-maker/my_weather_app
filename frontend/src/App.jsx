@@ -41,7 +41,7 @@ function App() {
   }
 
   return (
-    <div className="relative w-screen h-screen bg-black/40 
+    <div className="relative w-screen h-fit bg-black/40 
                 before:content-[''] before:absolute before:inset-0 
                 before:bg-[url('/images/sunset.jpeg')] before:bg-cover before:bg-center before:bg-repeat before:z-[-1]">
       <div className='flex flex-col justify-center items-center gap-10'>
