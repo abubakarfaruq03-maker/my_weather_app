@@ -54,7 +54,7 @@ function App() {
               onKeyDown={getWeather}
             />
           </div>
-          <div className='mt-10 mr-8 sn:mr-10'>
+          <div className='mt-10 mr-8 sn:mr-10 flex flex-col justify-center items-center gap-4'>
             <p className='text-[1.5rem] text-white font-bold text-center'>{weatherData?.sys?.country}</p>
             <h4 className='text-[3rem] text-white font-thin text-center'>{weatherData?.name}</h4>
             {Error && <p className='text-red-400 text-[1.5rem] font-semibold text-center mt-2'>{Error}</p>}
