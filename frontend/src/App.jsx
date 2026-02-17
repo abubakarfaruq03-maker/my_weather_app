@@ -25,7 +25,7 @@ function App() {
       setCity("")
     } catch (err) {
       console.error("Error fetching weather:", err.response?.data || err.message);
-      if (err.response?.status === 404) {
+      if (err.response?.status || err.response?.data?.cod === 404) {
         setError("City not found. Please try again.");
       } else {
         setError("Unable to fetch data. Please try again later.");
